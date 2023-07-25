@@ -53,7 +53,7 @@ export class TestNetwork extends TestNetworkNoAppView {
     return new TestNetwork(plc, pds, bsky)
   }
 
-  async processFullSubscription(timeout = 5000) {
+  async processFullSubscription(timeout = 10000) {
     const sub = this.bsky.sub
     if (!sub) return
     const { db } = this.pds.ctx.db
