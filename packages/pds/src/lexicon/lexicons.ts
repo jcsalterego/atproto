@@ -5212,6 +5212,13 @@ export const schemaDict = {
             algorithm: {
               type: 'string',
             },
+            excludePostTypes: {
+              type: 'array',
+              items: {
+                type: 'string',
+              },
+              description: 'Exclude post types: quote, reply, repost',
+            },
             limit: {
               type: 'integer',
               minimum: 1,
@@ -6422,6 +6429,13 @@ export const schemaDict = {
         parameters: {
           type: 'params',
           properties: {
+            excludePostTypes: {
+              type: 'array',
+              items: {
+                type: 'string',
+              },
+              description: 'Exclude post types: quote, reply, repost',
+            },
             limit: {
               type: 'integer',
               minimum: 1,
